@@ -85,6 +85,5 @@ describe DiabloApi::Career do
     end
   end
   context 'check key' do
-
   end
 end

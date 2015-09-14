@@ -19,8 +19,7 @@ module DiabloApi
     end
 
     def build_url
-
-        "https://#{@region}.api.battle.net/d3/profile/#{URI.escape(@battle_tag)}/hero/#{@hero_id}?locale=#{@locale}&apikey=#{DiabloApi::Config.configuration.api_key}"
+      "https://#{@region}.api.battle.net/d3/profile/#{URI.escape(@battle_tag)}/hero/#{@hero_id}?locale=#{@locale}&apikey=#{DiabloApi::Config.configuration.api_key}"
     end
   end
 end

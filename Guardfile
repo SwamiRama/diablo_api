@@ -20,4 +20,9 @@ guard :rspec, all_after_pass: false, all_on_start: false, cmd: 'bundle exec rspe
   watch('spec/lib/diablo_api_spec.rb')
   watch('spec/lib/diablo_api/career_spec.rb')
   watch('spec/lib/diablo_api/hero_spec.rb')
+  watch('spec/lib/diablo_api/converter_spec.rb')
+  watch('spec/lib/diablo_api/icons/item_spec.rb')
+  watch('spec/lib/diablo_api/icons/paperdoll_spec.rb')
+  watch('spec/lib/diablo_api/icons/portrait_spec.rb')
+  watch('spec/lib/diablo_api/icons/skill_spec.rb')
 end

@@ -3,7 +3,7 @@ require 'spec_helper'
 describe DiabloApi::Hero do
   before(:all) do
     DiabloApi::Config.configure {}
-    @hero, = DiabloApi::Hero.new('eu', 'de_DE', 'Jimmi#2787', '64773586')
+    @hero = DiabloApi::Hero.new('eu', 'de_DE', 'Jimmi#2787', '64773586')
   end
   context 'count rows' do
     it 'should be 18' do
@@ -71,7 +71,7 @@ describe DiabloApi::Hero do
     end
 
     it 'should be Hash' do
-      expect(@hero.stats.class).to eq Hash      
+      expect(@hero.stats.class).to eq Hash
     end
 
     it 'should be Hash' do
@@ -87,6 +87,5 @@ describe DiabloApi::Hero do
     end
   end
   context 'check key' do
-
   end
 end
