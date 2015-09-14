@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Fetch data from Blizzards API and more"
   spec.description   = "This gem makes it easy to fetch data from Blizzards API..."
-  spec.homepage      = "http://rubygems.org/gems/diablo_api"
+  spec.homepage      = "https://github.com/SwamiRama/diablo_api"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
