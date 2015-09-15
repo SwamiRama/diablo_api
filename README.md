@@ -23,6 +23,7 @@ Or install it yourself as:
 1. Create a developer account on [Blizzards developer portal](https://dev.battle.net/)
 2. save the developer key do a config file.
 3. take the data :)
+<b></b>
 
 
 
