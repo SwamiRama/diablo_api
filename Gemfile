@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in diablo_api.gemspec
 gemspec
 
+gem 'json'
 
 group :development do
   gem 'guard'
