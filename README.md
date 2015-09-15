@@ -25,6 +25,7 @@ Or install it yourself as:
 3. take the data :)
 
 
+
     DiabloApi::Config.configure {}
     DiabloApi::Career.new('eu', 'de_DE', 'Jimmi#2787')
     DiabloApi::Hero.new('eu', 'de_DE', 'Jimmi#2787', '58924397')
