@@ -1,7 +1,3 @@
-require 'yaml'
-require 'open-uri'
-require 'json'
-
 module DiabloApi
   module Profiles
     module Career

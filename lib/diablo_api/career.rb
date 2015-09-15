@@ -1,3 +1,6 @@
+require 'yaml'
+require 'open-uri'
+require 'json'
 require 'diablo_api/models/profiles/career'
 module DiabloApi
   class Career

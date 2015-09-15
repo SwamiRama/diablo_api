@@ -1,108 +1,116 @@
 module DiabloApi
   module Data
     module Item
+      def main_data
+        ignore = %w(Hash Array)
+        md = {}
+        @data.each do |k, v|
+          md[k] = v unless ignore.include? v.class.to_s
+        end
+        md
+      end
       def id
-        @date['id']
+        @data['id']
       end
 
       def name
-        @date['name']
+        @data['name']
       end
 
       def icon
-        @date['icon']
+        @data['icon']
       end
 
-      def displayColor
-        @date['displayColor']
+      def display_color
+        @data['displayColor']
       end
 
-      def tooltipParams
-        @date['tooltipParams']
+      def tooltip_params
+        @data['tooltipParams']
       end
 
-      def requiredLevel
-        @date['requiredLevel']
+      def required_level
+        @data['requiredLevel']
       end
 
-      def itemLevel
-        @date['itemLevel']
+      def item_level
+        @data['itemLevel']
       end
 
-      def stackSizeMax
-        @date['stackSizeMax']
+      def stack_size_max
+        @data['stackSizeMax']
       end
 
-      def bonusAffixes
-        @date['bonusAffixes']
+      def bonus_affixes
+        @data['bonusAffixes']
       end
 
-      def bonusAffixesMax
-        @date['bonusAffixesMax']
+      def bonus_affixes_max
+        @data['bonusAffixesMax']
       end
 
-      def accountBound
-        @date['accountBound']
+      def account_bound
+        @data['accountBound']
       end
 
-      def flavorText
-        @date['flavorText']
+      def flavor_text
+        @data['flavorText']
       end
 
-      def typeName
-        @date['typeName']
+      def type_name
+        @data['typeName']
       end
 
       def type
-        @date['type']
+        @data['type']
       end
 
-      def damageRange
-        @date['damageRange']
+      def damage_range
+        @data['damageRange']
       end
 
       def slots
-        @date['slots']
+        @data['slots']
       end
 
       def attributes
-        @date['attributes']
+        @data['attributes']
       end
 
-      def attributesRaw
-        @date['attributesRaw']
+      def attributes_raw
+        @data['attributesRaw']
       end
 
-      def randomAffixes
-        @date['randomAffixes']
+      def random_affixes
+        @data['randomAffixes']
       end
 
       def gems
-        @date['gems']
+        @data['gems']
       end
 
-      def socketEffects
-        @date['socketEffects']
+      def socket_effects
+        @data['socketEffects']
       end
 
-      def craftedBy
-        @date['craftedBy']
+      def crafted_by
+        @data['craftedBy']
       end
 
-      def seasonRequiredToDrop
-        @date['seasonRequiredToDrop']
+      def season_required_to_drop
+        @data['seasonRequiredToDrop']
       end
 
-      def isSeasonRequiredToDrop
-        @date['isSeasonRequiredToDrop']
+      def is_season_required_to_drop
+        @data['isSeasonRequiredToDrop']
       end
 
       def description
-        @date['description']
+        @data['description']
       end
 
-      def blockChance
-        @date['blockChance']
+      def block_chance
+        @data['blockChance']
       end
     end
   end
