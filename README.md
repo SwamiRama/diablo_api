@@ -1,6 +1,6 @@
 # DiabloApi
 
-Work in Progress
+This gem use the Blizzard API to get Informations about Diablo 3 characters and items.
 
 ## Installation
 
@@ -20,20 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-Work in Progress
+1. Create a developer account on [Blizzards developer portal](https://dev.battle.net/)
+2. save the developer key do a config file.
+3. take the data :)
+
 
     DiabloApi::Config.configure {}
     DiabloApi::Career.new('eu', 'de_DE', 'Jimmi#2787')
+    DiabloApi::Hero.new('eu', 'de_DE', 'Jimmi#2787', '58924397')
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/diablo_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/swamirama/diablo_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
