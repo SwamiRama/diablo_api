@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'json'
+gem 'activesupport', '~> 4.2.4'
 
 group :development do
   gem 'guard'

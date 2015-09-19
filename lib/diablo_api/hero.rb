@@ -1,7 +1,11 @@
 require 'diablo_api/models/profiles/hero'
+require 'diablo_api/helper/converter'
+
 module DiabloApi
   class Hero
     include DiabloApi::Profiles::Hero
+    include DiabloApi::Helper::Converter
+
     attr_reader :region, :locale, :battle_tag, :hero_id, :data
 
     def initialize(region, locale, battle_tag, hero_id)
@@ -15,7 +19,7 @@ module DiabloApi
     private
 
     def fetch
-      @data = JSON.load(open(build_url).read)
+      @data = convert_hash_keys(JSON.load(open(build_url).read))
     end
 
     def build_url

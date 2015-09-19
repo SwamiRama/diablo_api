@@ -14,75 +14,75 @@ module DiabloApi
       end
 
       def id
-        @data['id']
+        @data[:id]
       end
 
       def name
-        @data['name']
+        @data[:name]
       end
 
       def class
-        @data['class']
+        @data[:class]
       end
 
       def gender
-        @data['gender']
+        @data[:gender]
       end
 
       def level
-        @data['level']
+        @data[:level]
       end
 
       def kills
-        @data['kills']
+        @data[:kills]
       end
 
       def paragon_level
-        @data['paragonLevel']
+        @data[:paragon_level]
       end
 
       def hardcore
-        @data['hardcore']
+        @data[:hardcore]
       end
 
       def seasonal
-        @data['seasonal']
+        @data[:seasonal]
       end
 
       def season_created
-        @data['seasonCreated']
+        @data[:season_created]
       end
 
       def skills
-        @data['skills']
+        @data[:skills]
       end
 
       def items
-        @data['items']
+        @data[:items]
       end
 
       def followers
-        @data['followers']
+        @data[:followers]
       end
 
       def legendary_powers
-        @data['legendaryPowers']
+        @data[:legendary_powers]
       end
 
       def stats
-        @data['stats']
+        @data[:stats]
       end
 
       def progression
-        @data['progression']
+        @data[:progression]
       end
 
       def dead
-        @data['dead']
+        @data[:dead]
       end
 
       def last_updated
-        @data['last-updated']
+        @data[:last_updated]
       end
     end
   end

@@ -11,99 +11,99 @@ module DiabloApi
       end
 
       def battle_tag
-        @data['battleTag']
+        @data[:battle_tag]
       end
 
       def paragon_level
-        @data['paragonLevel']
+        @data[:paragon_level]
       end
 
       def paragon_level_hardcore
-        @data['paragonLevelHardcore']
+        @data[:paragon_level_hardcore]
       end
 
       def paragon_level_season
-        @data['paragonLevelSeason']
+        @data[:paragon_level_season]
       end
 
       def paragon_level_season_hardcore
-        @data['paragonLevelSeasonHardcore']
+        @data[:paragon_level_season_hardcore]
       end
 
       def guild_name
-        @data['guildName']
+        @data[:guild_name]
       end
 
       def heroes
-        @data['heroes']
+        @data[:heroes]
       end
 
       def last_hero_played
-        @data['lastHeroPlayed']
+        @data[:last_hero_played]
       end
 
       def last_updated
-        @data['lastUpdated']
+        @data[:last_updated]
       end
 
       def kills
-        @data['kills']
+        @data[:kills]
       end
 
       def highest_hardcore_level
-        @data['highestHardcoreLevel']
+        @data[:highest_hardcore_level]
       end
 
       def time_played
-        @data['timePlayed']
+        @data[:time_played]
       end
 
       def progression
-        @data['progression']
+        @data[:progression]
       end
 
       def fallen_heroes
-        @data['fallenHeroes']
+        @data[:fallen_heroes]
       end
 
       def blacksmith
-        @data['blacksmith']
+        @data[:blacksmith]
       end
 
       def jeweler
-        @data['jeweler']
+        @data[:jeweler]
       end
 
       def mystic
-        @data['mystic']
+        @data[:mystic]
       end
 
       def blacksmith_hardcore
-        @data['blacksmithHardcore']
+        @data[:blacksmith_hardcore]
       end
 
       def jeweler_hardcore
-        @data['jewelerHardcore']
+        @data[:jeweler_hardcore]
       end
 
       def mystic_hardcore
-        @data['mysticHardcore']
+        @data[:mystic_hardcore]
       end
 
       def blacksmith_season
-        @data['blacksmithSeason']
+        @data[:blacksmith_season]
       end
 
       def jeweler_season
-        @data['jewelerSeason']
+        @data[:jeweler_season]
       end
 
       def mystic_season
-        @data['mysticSeason']
+        @data[:mystic_season]
       end
 
       def seasonal_profiles
-        @data['seasonalProfiles']
+        @data[:seasonal_profiles]
       end
     end
   end

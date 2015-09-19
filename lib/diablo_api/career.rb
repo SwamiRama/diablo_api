@@ -2,9 +2,12 @@ require 'yaml'
 require 'open-uri'
 require 'json'
 require 'diablo_api/models/profiles/career'
+require 'diablo_api/helper/converter'
 module DiabloApi
   class Career
     include DiabloApi::Profiles::Career
+    include DiabloApi::Helper::Converter
+
     attr_reader :region, :locale, :battle_tag, :data
 
     def initialize(region, locale, battle_tag)
@@ -16,8 +19,8 @@ module DiabloApi
 
     private
 
-    def fetch
-      @data = JSON.load(open(build_url).read)
+    def fetch      
+      @data = convert_hash_keys(JSON.load(open(build_url).read))
     end
 
     def build_url
