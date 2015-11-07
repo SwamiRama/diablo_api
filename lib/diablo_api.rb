@@ -8,6 +8,7 @@ require 'diablo_api/icons/item'
 require 'diablo_api/icons/paperdoll'
 require 'diablo_api/icons/portrait'
 require 'diablo_api/icons/skill'
+require 'diablo_api/tooltip'
 
 module DiabloApi
 
