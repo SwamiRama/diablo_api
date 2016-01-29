@@ -47,7 +47,7 @@ describe DiabloApi::Hero do
     end
 
     it 'should be TrueClass' do
-      expect(@hero.seasonal.class).to eq TrueClass
+      expect(@hero.seasonal.class).to eq FalseClass
     end
 
     it 'should be Fixnum' do
